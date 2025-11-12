@@ -11,7 +11,7 @@ const app= express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cors({
-    origin:'http://localhost:5173', // frontend url accesing
+    origin:'https://vercel-frontend-wine-two.vercel.app/', // frontend url accesing
     credentials:true
 }));
 app.use(morgan('dev'));
